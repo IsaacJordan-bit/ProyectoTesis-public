@@ -1,0 +1,30 @@
+{
+  "run_id": "4338aedba198949f2757ca5ac55e4c398499cd828d2b48dbd72a7eac6e70cb24",
+  "primary": "S_TENSOR_SHARED__ridge_1e-04",
+  "sensitivity": "S_TENSOR_SHARED__ridge_1e-04",
+  "primary_limits": {
+    "first_metric": "OOF_curve_RMSE",
+    "first_best": "H_BETA_LINEAR_Z__ridge_1e-07",
+    "first_limit": 0.006257724059474156,
+    "second_metric": "OOF_surface_RMSE",
+    "second_best": "S_TENSOR_SHARED__ridge_1e-04",
+    "second_limit": 0.010711393550490663
+  },
+  "sensitivity_limits": {
+    "first_metric": "OOF_surface_RMSE",
+    "first_best": "S_TENSOR_SHARED__ridge_1e-04",
+    "first_limit": 0.010711393550490663,
+    "second_metric": "OOF_curve_RMSE",
+    "second_best": "S_TENSOR_SHARED__ridge_1e-05",
+    "second_limit": 0.006176510341882632
+  },
+  "refit_candidates": [
+    "H_BETA_LINEAR_Z__ridge_1e-01",
+    "L_INTERACTION__ridge_1e-02",
+    "S_TENSOR_SHARED__ridge_1e-04"
+  ],
+  "uses_signs": false,
+  "uses_LOCO": false,
+  "logloss_veto": false,
+  "automatic_adoption": false
+}

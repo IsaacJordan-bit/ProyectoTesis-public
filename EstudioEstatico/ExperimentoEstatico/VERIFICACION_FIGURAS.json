@@ -1,0 +1,40 @@
+{
+  "estado": "COMPLETE",
+  "dataset_K": [
+    "glove_k40",
+    "w2v_k40",
+    "w2v_k50"
+  ],
+  "heatmaps_completos": 90,
+  "heatmaps_manuscrito": 90,
+  "diagnosticos": 27,
+  "formatos": [
+    "png",
+    "pdf"
+  ],
+  "imagenes_notebook": 117,
+  "intervalo_manuscrito": [
+    0.01,
+    0.15
+  ],
+  "intervalo_completo": [
+    0.01,
+    0.495
+  ],
+  "matrices_y_escalas_identicas_entre_vistas": true,
+  "indicadores_LOCO_cotejados_con_resultados_guardados": true,
+  "idioma_figuras": "English",
+  "nuevos_ajustes": 0,
+  "nuevas_clasificaciones": 0,
+  "intervalo_alternativo_verificado": [
+    0.037,
+    0.213
+  ],
+  "solo_vista_completa_verificada": true,
+  "intervalos_invalidos_rechazados": true,
+  "matrices_sin_modificar": true,
+  "paquetes_y_modulos_cientificos_identicos": true,
+  "barra_color_alineada_con_panel": true,
+  "render_final_segundos": 52.83283102999849,
+  "contraste_estructural_opcional_verificado": true
+}

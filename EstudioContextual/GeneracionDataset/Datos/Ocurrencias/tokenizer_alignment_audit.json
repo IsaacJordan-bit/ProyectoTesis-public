@@ -1,0 +1,18 @@
+{
+  "all_rows_alignable": true,
+  "elapsed_seconds": 1085.3627992999973,
+  "examples": [],
+  "input_policy": "target_centered_wordpiece_crop",
+  "max_content_wordpieces": 126,
+  "max_raw_wordpieces": 593,
+  "max_seq_len": 128,
+  "max_target_wordpieces": 10,
+  "n_centered_crop_failures": 0,
+  "n_naive_target_fully_lost": 7288,
+  "n_naive_target_partially_truncated": 1274,
+  "n_rows_checked": 10302900,
+  "n_rows_requiring_wordpiece_crop": 566399,
+  "n_special_tokens": 2,
+  "n_target_missing_before_crop": 0,
+  "n_target_too_long": 0
+}

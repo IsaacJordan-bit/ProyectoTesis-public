@@ -1,0 +1,10 @@
+{
+  "project_root": "C:\\Users\\jisaa\\Workspace\\Tesis\\Exp2def",
+  "overrides": {
+    "glove": {
+      "gk83_root": "C:\\Users\\jisaa\\Workspace\\Tesis\\Exp2def\\Results\\computador_secundario\\GK60G_SELECTED_K_FULL98_GENERAL_GATE_VALIDATION_PC_PRINCIPAL\\20261008T190301Z_6e346ce9\\GK62G_K100_PILOT9\\GK67G_K100_FULL98_Z\\GK80G_FULL98_SEARCH\\GK83G_HFY_SCALE_MATCHED\\scale_d3399476d688141441a5",
+      "model_root": "C:\\Users\\jisaa\\Workspace\\Tesis\\Exp2def\\Results\\computador_secundario\\GK60G_SELECTED_K_FULL98_GENERAL_GATE_VALIDATION_PC_PRINCIPAL\\20261008T190301Z_6e346ce9\\GK62G_K100_PILOT9\\GK67G_K100_FULL98_Z\\GK80G_FULL98_SEARCH\\GK83G_HFY_SCALE_MATCHED\\GK85G_MODEL_SEARCH\\search_b77d2b37e15428d6bf13",
+      "refit_root": "C:\\Users\\jisaa\\Workspace\\Tesis\\Exp2def\\Results\\computador_secundario\\GK60G_SELECTED_K_FULL98_GENERAL_GATE_VALIDATION_PC_PRINCIPAL\\20261008T190301Z_6e346ce9\\GK62G_K100_PILOT9\\GK67G_K100_FULL98_Z\\GK80G_FULL98_SEARCH\\GK83G_HFY_SCALE_MATCHED\\GK85G_MODEL_SEARCH\\search_b77d2b37e15428d6bf13\\GK88G_SELECTED_FULL_LOCO\\refit_addb067bc5bf230730d5"
+    }
+  }
+}

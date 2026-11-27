@@ -1,0 +1,41 @@
+{
+  "GeneracionDataset.ipynb": {
+    "code_cells_executed": 5,
+    "mode": "reuse_or_disabled_generation",
+    "status": "PASS"
+  },
+  "GenerarOcurrencias.ipynb": {
+    "code_cells_executed": 22,
+    "mode": "reuse_or_disabled_generation",
+    "status": "PASS"
+  },
+  "real_prototypes": {
+    "shape": [
+      50455,
+      768
+    ],
+    "vocabulary_sha256": "95d87d7ce442dd36699ab0ff7bdd8bd12c10e5460f642f6ba4a514369e088edc",
+    "embedding_sha256": "0590ffe496e1c0da00b399e4773d715f835b17ce2c0b0004ff19fcd3c7269593",
+    "status": "VERIFIED"
+  },
+  "real_metadata": {
+    "master_words": 103029,
+    "expected_rows": 10302900,
+    "reports_and_index": "VERIFIED",
+    "occurrence_file_present": false,
+    "occurrence_bytes_verified_by_this_function": false
+  },
+  "synthetic_occurrence_tests": {
+    "load_literal_null": true,
+    "exact_sample_means": true,
+    "exact_full_rebuild": true,
+    "changed_occurrences_rejected": true,
+    "invalid_output_not_written": true
+  },
+  "limits": [
+    "No se recibió el Parquet maestro real ni su muestra.",
+    "La reconstrucción desde el Parquet real está pendiente de ejecución local.",
+    "La generación BERT/corpus completa no se ejecutó.",
+    "No se ejecutó sobre Windows."
+  ]
+}

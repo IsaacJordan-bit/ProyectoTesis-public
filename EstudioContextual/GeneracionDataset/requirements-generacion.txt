@@ -1,0 +1,7 @@
+-r requirements.txt
+torch
+transformers
+datasets
+duckdb
+tqdm
+scikit-learn

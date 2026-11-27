@@ -1,0 +1,10 @@
+{
+  "status": "PROTOTYPES_VERIFIED_MASTER_OCCURRENCES_PENDING_LOCAL_COPY_AND_VALIDATION",
+  "missing_original_wordnet_audit_required_for_reproduction": false,
+  "frozen_vocabulary_available": true,
+  "warnings_resolved_cause": "collector_interpreter_without_pyarrow",
+  "master_file_size_from_inventory": 41281045347,
+  "stage_2_1_fully_verified": false,
+  "scientific_verification": "VERIFICACION_DATOS.json",
+  "execution_tests": "PRUEBAS_INTEGRACION.json"
+}

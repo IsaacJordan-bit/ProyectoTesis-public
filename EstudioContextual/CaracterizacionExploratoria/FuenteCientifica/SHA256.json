@@ -1,0 +1,20 @@
+{
+  "MANUSCRIPT_INTEGRATION.md": "f24c1fc9db97e354b01a3246e1d538409d73d7ca1c32dee681267a08045ae10b",
+  "METHODS.md": "de5b841aa26c408bffdfe20b16ffc0300a1e15d12781f3e709f958fab1c200d6",
+  "P22_Contextual_Properties.ipynb": "f39b4a297953d4c1ae44936baf51df97cb92e329b9ae169147ddb82d21b932e1",
+  "README.md": "2e74acfc982d3efb134206ea05e0593daa0e5390a86edad25ce8db2a8fd12d14",
+  "VALIDATION.md": "710b1be2a45c6bce35c4134fabac64b20fb7d338ec146977cbeedeb9a56e053d",
+  "p22_contextual.py": "afe778a9ea8a8d834c151712e1f997e42d93f42285ed7c5b845e2a52547efdcc",
+  "reference/README.md": "54b579a5eeadcada8d96289ef9152d11a8d279ae75c96308d958f8b248f8edba",
+  "reference/bank_identity.json": "0ed6932bbd3e72eddddab0325577be2899e00973a97e6a7366363e1b6db23f4d",
+  "reference/bank_protocol.json": "e9f7406b959bada532602c2ac9ad83aeda65b260d4943bbee0e78c1d0dbe0056",
+  "reference/common.parquet": "713dffc37ada33ed1f6ced88bd461d9afd6abd7d0de1b8c6d428e1ec05dbbf73",
+  "reference/full.parquet": "e526c222ff24234977b3e8a7a5ec70de01d3f2a223ff5b69a28a6a68f7ae2e69",
+  "reference/geometry.json": "5903fbe8219189d0c55c135f0a8f21354c71c86768b239ee79dca8906ed8a897",
+  "reference/provenance.json": "3495ece847ebfcfba5f5d311d7263c7434adbe4d1af536aa64b4e2664273e492",
+  "references.bib": "3d22a51bba6dad258aa557bcc865b43390765c76de4866f9e6fb38d50605fa27",
+  "requirements.txt": "d6cb7966970cd9666a0cd80fa9679f8465f82e34fdb23da5160b0a1ab52b3e9b",
+  "tests/run_notebook_cells.py": "a1c109d9641aa13e4cc1a899e302f2cb90a6b742db9a8d0cb8a9a6a9a4ac357f",
+  "tests/smoke_pipeline.py": "2a4f075e70d54541957a45417f426d9be797cf7c71b95f6bb7e79ef14663f289",
+  "tests/test_p22.py": "d5abc07dae8021a27b14274439dc781cf231b2648cd5a7125b486d3d506f5ebd"
+}

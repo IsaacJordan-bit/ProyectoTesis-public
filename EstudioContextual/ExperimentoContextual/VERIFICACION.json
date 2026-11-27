@@ -1,0 +1,9 @@
+{
+  "figures": 81,
+  "png_pdf_files": 162,
+  "conditions": 9,
+  "networks": 3,
+  "model": "PRIMARY",
+  "tests": "MATCHED5 RMSE and OOF curves reconciled with saved results; all files exported",
+  "new_fits": 0
+}

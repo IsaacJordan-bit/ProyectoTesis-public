@@ -1,0 +1,39 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Credentials and local environment variables
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Large contextual datasets managed separately
+/EstudioContextual/GeneracionDataset/Datos/Ocurrencias/contextual_occurrences_definitive.parquet
+/EstudioContextual/GeneracionDataset/Datos/Prototipos/contextual_exp2_embeddings_rawmean100_wordnet_v1.npz
+
+# Machine-specific configurations
+rutas_resultados.json
+
+# Custom virtual environments
+.venv_*/

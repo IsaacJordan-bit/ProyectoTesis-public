@@ -1,0 +1,7 @@
+{
+  "source_archive": "P21_Piloto_Definitivo.zip",
+  "source_archive_sha256": "b051325d733fa6121586af799d3f52a7413fa49b8cd4381d9daed3ebe0125f6c",
+  "nested_source": "P21_Piloto_Definitivo/p21_source.zip",
+  "bank_id": "68682213c8913476a11a1ef997136dbcb80ec50eeedb4f466cb8dd8deae8b981",
+  "note": "Source metadata only. No retrieval predictions were copied into this characterization package."
+}

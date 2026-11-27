@@ -1,0 +1,14 @@
+# Use the existing P21 environment if these dependencies are already present.
+# No automatic upgrade is performed by the notebook.
+numpy>=1.26
+pandas>=2.2
+scipy>=1.11
+scikit-learn>=1.3
+pyarrow>=14
+matplotlib>=3.9
+psutil>=5.9
+threadpoolctl>=3.2
+jinja2>=3.1
+# Notebook interface (not used by the standalone analysis module):
+ipython>=8
+ipykernel>=6

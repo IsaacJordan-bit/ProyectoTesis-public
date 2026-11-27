@@ -1,0 +1,70 @@
+{
+  "modelo": "GloVe 6B 50D",
+  "fuente_distribucion": "https://downloads.cs.stanford.edu/nlp/data/glove.6B.zip",
+  "fichero_en_distribucion": "glove.6B.50d.txt",
+  "bytes_txt": 171350079,
+  "sha256_txt": "d8f717f8dd4b545cb7f418ef9f3d0c3e6e68a6f48b97d32f8b7aae40cb31f96f",
+  "referencia_historica_sha256_txt": "GK60G_PC_principal_cache_reubicado.py, EXPECTED_GLOVE_SHA256_GK60G",
+  "cargador": "experiments_utils.loadGloveDataset (reexportado por preprocessing.py)",
+  "lectura_pandas": {
+    "sep": " ",
+    "quoting": 3,
+    "header": null,
+    "index_col": 0
+  },
+  "limpieza": "Descartar índices ausentes, convertir índices a str, conservar la primera entrada por índice, comprobar columnas numéricas.",
+  "forma_fuente": [
+    400000,
+    50
+  ],
+  "forma_canonica": [
+    399997,
+    50
+  ],
+  "dtype_valores": "float64",
+  "indices_ausentes": [
+    {
+      "linea_txt": 14799,
+      "token": "nan"
+    },
+    {
+      "linea_txt": 24208,
+      "token": "null"
+    },
+    {
+      "linea_txt": 72925,
+      "token": "n/a"
+    }
+  ],
+  "duplicados_descartados": 0,
+  "primeras_palabras": [
+    "the",
+    ",",
+    ".",
+    "of",
+    "to"
+  ],
+  "sha256_indice_y_matriz_reconstruida": "2ed0d282c625464365043d10405cf31064babdbbe3a6aee1095e2c0589165da1",
+  "serializacion_huella": "Lista ordenada del índice en json.dumps(ensure_ascii=False), UTF-8, seguida de la matriz float64 little-endian por filas. Huella calculada en esta revisión.",
+  "normas_l2": [
+    "min",
+    "media",
+    "max"
+  ],
+  "normas_l2_historicas": [
+    0.04693154286091541,
+    4.474556674375726,
+    14.121561584771847
+  ],
+  "normas_l2_reconstruidas": [
+    0.04693154286091541,
+    4.474556674375726,
+    14.121561584771847
+  ],
+  "pandas_verificacion": "2.2.3",
+  "numpy_verificacion": "2.3.5",
+  "codigo_reproduccion": "reconstruir_glove_50d.py",
+  "ruta_fuente": "datos/glove.6B.50d.txt",
+  "ruta_salida": "salida/glove_6B_50D_definitivo.pkl",
+  "nota": "Dataset base RAW reproducible; selección de vecinos y K pertenecen a la etapa experimental."
+}

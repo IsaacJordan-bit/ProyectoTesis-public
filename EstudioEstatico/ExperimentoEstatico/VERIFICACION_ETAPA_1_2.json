@@ -1,0 +1,279 @@
+{
+  "estado": "COMPLETE",
+  "segundos": 111.8889221779973,
+  "celdas": [
+    {
+      "celda": 2,
+      "seconds": 1.5822604679997312
+    },
+    {
+      "celda": 3,
+      "seconds": 5.390324955998949
+    },
+    {
+      "celda": 5,
+      "seconds": 0.00030465000236290507
+    },
+    {
+      "celda": 8,
+      "seconds": 20.825002726000093
+    },
+    {
+      "celda": 11,
+      "seconds": 5.7466450490028365
+    },
+    {
+      "celda": 13,
+      "seconds": 17.25046474299961
+    },
+    {
+      "celda": 15,
+      "seconds": 4.064332629001001
+    },
+    {
+      "celda": 17,
+      "seconds": 4.710555577999912
+    },
+    {
+      "celda": 19,
+      "seconds": 16.436684476000664
+    },
+    {
+      "celda": 21,
+      "seconds": 3.9895568499996443
+    },
+    {
+      "celda": 23,
+      "seconds": 0.007519128001149511
+    },
+    {
+      "celda": 25,
+      "seconds": 0.00016666599913151003
+    },
+    {
+      "celda": 27,
+      "seconds": 0.0027494450005178805
+    },
+    {
+      "celda": 28,
+      "seconds": 11.464933889001259
+    },
+    {
+      "celda": 29,
+      "seconds": 16.177890027000103
+    },
+    {
+      "celda": 30,
+      "seconds": 4.215521934998833
+    },
+    {
+      "celda": 32,
+      "seconds": 0.00013145399861969054
+    },
+    {
+      "celda": 34,
+      "seconds": 0.0015073419999680482
+    },
+    {
+      "celda": 35,
+      "seconds": 0.0001562409997859504
+    },
+    {
+      "celda": 36,
+      "seconds": 9.176599996862933e-05
+    },
+    {
+      "celda": 37,
+      "seconds": 7.29669991414994e-05
+    }
+  ],
+  "seleccion": {
+    "glove": {
+      "dataset": "glove",
+      "K": 40,
+      "criterio": "FIRST_STRUCTURALLY_ADMISSIBLE",
+      "grilla_candidata": [
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ],
+      "K_evaluadas_hasta_seleccion": [
+        20,
+        30,
+        40
+      ],
+      "usa_T1_T2_T3": false,
+      "usa_LOCO": false
+    },
+    "w2v": {
+      "dataset": "w2v",
+      "K": 40,
+      "criterio": "FIRST_STRUCTURALLY_ADMISSIBLE",
+      "grilla_candidata": [
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ],
+      "K_evaluadas_hasta_seleccion": [
+        20,
+        30,
+        40
+      ],
+      "usa_T1_T2_T3": false,
+      "usa_LOCO": false
+    }
+  },
+  "GloVe": {
+    "K": 40,
+    "modelo": "H_BETA_LINEAR_Z__ridge_1e-04",
+    "CV": 3825,
+    "FULL_LOCO": 27,
+    "CORE3_PASS": true,
+    "fuentes_dentro_del_proyecto": true,
+    "max_delta_OOF": 8.881784197001252e-16,
+    "max_gradiente_OOF": 4.995739343825226e-07
+  },
+  "W2V": {
+    "archivos_export_verificados": 676,
+    "diagnosticos_CV": 3825,
+    "checkpoints_CV_incluidos": 75,
+    "checkpoints_CV_no_incluidos": 3750,
+    "refits_verificados": 27,
+    "coeficientes_verificados": true,
+    "nuevos_ajustes": 0,
+    "nuevas_clasificaciones": 0
+  },
+  "W2V_K50": {
+    "K": 50,
+    "modelo": "H_BETA_LINEAR_Z__ridge_1e-02",
+    "CV": 3825,
+    "FULL_LOCO": 27,
+    "CORE3_PASS": true,
+    "fuentes_dentro_del_proyecto": true,
+    "max_delta_OOF": 5.551115123125783e-16,
+    "max_gradiente_OOF": 9.973577671108442e-08,
+    "resumen": {
+      "version": "STATIC_RECTOR_OFFICIAL_20261020_V1",
+      "dataset": "w2v",
+      "K": 50,
+      "condition": "RAW",
+      "execution_status": "COMPLETE",
+      "CORE3_PASS": true,
+      "empirical_CORE3": true,
+      "model": "H_BETA_LINEAR_Z__ridge_1e-02",
+      "model_gate_grid": "grid30",
+      "selected_K_policy": "K50_FIJADA_PARA_EL_ANEXO",
+      "networks": [
+        {
+          "network": "mhncs_softmax",
+          "A": true,
+          "E_empirical": true,
+          "empirical_LOCO_passed": 8,
+          "R_EMP": true,
+          "M_matched5": true,
+          "model_LOCO_passed_5": 8,
+          "R_MODEL_matched5": true,
+          "M_grid30": true,
+          "model_LOCO_passed_30": 8,
+          "R_MODEL_grid30": true,
+          "primary_model_grid": "grid30",
+          "M_primary": true,
+          "R_MODEL_primary": true,
+          "B_report": true,
+          "ALL_FITS_STABLE": true,
+          "CORE3_component": true,
+          "empirical_model5_E_disagreements": 0,
+          "model5_grid30_E_disagreements": 0
+        },
+        {
+          "network": "hfy_entmax_a15",
+          "A": true,
+          "E_empirical": true,
+          "empirical_LOCO_passed": 8,
+          "R_EMP": true,
+          "M_matched5": true,
+          "model_LOCO_passed_5": 8,
+          "R_MODEL_matched5": true,
+          "M_grid30": true,
+          "model_LOCO_passed_30": 8,
+          "R_MODEL_grid30": true,
+          "primary_model_grid": "grid30",
+          "M_primary": true,
+          "R_MODEL_primary": true,
+          "B_report": true,
+          "ALL_FITS_STABLE": true,
+          "CORE3_component": true,
+          "empirical_model5_E_disagreements": 0,
+          "model5_grid30_E_disagreements": 0
+        },
+        {
+          "network": "hfy_normmax_g2",
+          "A": true,
+          "E_empirical": true,
+          "empirical_LOCO_passed": 8,
+          "R_EMP": true,
+          "M_matched5": true,
+          "model_LOCO_passed_5": 8,
+          "R_MODEL_matched5": true,
+          "M_grid30": true,
+          "model_LOCO_passed_30": 8,
+          "R_MODEL_grid30": true,
+          "primary_model_grid": "grid30",
+          "M_primary": true,
+          "R_MODEL_primary": true,
+          "B_report": true,
+          "ALL_FITS_STABLE": true,
+          "CORE3_component": true,
+          "empirical_model5_E_disagreements": 0,
+          "model5_grid30_E_disagreements": 0
+        }
+      ],
+      "B_is_diagnostic": true,
+      "LOCO_refits_preprocessing": true,
+      "independent_validation": false,
+      "source_metadata_verified": true,
+      "execution_scope": "official implementation; historical artifacts reused only after verification",
+      "OOF_brier_fraction_note": "Historical squared error of fractions; Bernoulli Brier is a separate column",
+      "prototype_scope": null,
+      "new_refits": 0,
+      "reused_refits": 27,
+      "K_selection": {
+        "dataset": "w2v",
+        "K": 50,
+        "rol": "ANEXO_SENSIBILIDAD",
+        "K_principal": 40,
+        "criterio": "K50_FIJADA_PARA_EL_ANEXO",
+        "seleccion_principal_modificada": false,
+        "ridge_K40": 0.001,
+        "ridge_K50": 0.01
+      },
+      "role": "ANEXO_SENSIBILIDAD",
+      "historical_K_policy": "ASCENDING_FIRST_EMPIRICAL_CORE3"
+    }
+  },
+  "nuevos_ajustes": 0,
+  "nuevas_clasificaciones": 0,
+  "alcance": "Notebook principal y anexo K50: figuras inglesas, vistas completas y ampliadas desde superficies verificadas. AA permanece separado.",
+  "metodo_ejecucion": {
+    "modo": "Celdas Python secuenciales, espacio de nombres compartido y captura IPython; sin kernel Jupyter externo.",
+    "sistema": "Linux",
+    "python": "3.12.14",
+    "entrenamiento_y_ajuste_bloqueados_en_la_prueba": true,
+    "ejecutado_en_Windows": false
+  },
+  "imagenes_notebook": 117,
+  "verificacion_presentacion": "VERIFICACION_FIGURAS.json",
+  "render_final": "Heatmaps regenerados después de alinear la barra de color con el panel; las salidas del notebook incluyen esos PNG."
+}

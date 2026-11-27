@@ -1,0 +1,14 @@
+{
+  "source_P19_zip_sha256": "2413f3a8c0e64a8ac0d9272badf239f6c2726c5d4b9fd75a3907c914d2d869b0",
+  "methodology_sha256": "6d505862f12c873385ae38a3036cf02e9311c321a429f305015f84c7c421b494",
+  "methodology_section": "Comparaci\u00f3n controlada del aporte contextual",
+  "unchanged_kernels": {
+    "e6_p18_core.py": "9459426b4ec9a16f339928a5a9d4c1ad7f9a257f39bee00f9afb82adfd8f95d3",
+    "e6_p18_static.py": "ef2bd4039b7ca1f4577b6a11f342df89d1665807d92666e0a3fb7803d5268680",
+    "e6_p18_compute.py": "3e0d38110f4c80409a1136721a94b49698841b53d24deb564b203c9708ba8070",
+    "e6_p18_numeric.py": "395fa62291e21c3dafbe031e246db9766675f720f6463800b01bbeb308e8cce1"
+  },
+  "new_experiment": "P20_CONTROLLED_APO_V1",
+  "historical_predictions_imported": false,
+  "raw_corpus_included": false
+}

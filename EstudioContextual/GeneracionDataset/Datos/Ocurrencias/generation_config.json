@@ -1,0 +1,103 @@
+{
+  "bert_input_policy": {
+    "crop_applied_before_model_forward": true,
+    "max_content_wordpieces": 126,
+    "max_seq_len": 128,
+    "n_special_tokens": 2,
+    "policy": "target_centered_wordpiece_crop",
+    "preserve_all_target_wordpieces": true,
+    "special_tokens": [
+      "[CLS]",
+      "[SEP]"
+    ],
+    "standard_right_truncation_used": false,
+    "target_positions_recorded_as": [
+      "wp_start",
+      "wp_end"
+    ]
+  },
+  "config_name": "ctx_v3_bert_base_commonpool_equal100",
+  "context": {
+    "context_is_selection_unit": true,
+    "context_window_definition": "target ±40 lexical whitespace tokens",
+    "lexical_tokens_each_side": 40,
+    "stopwords_retained_inside_context": true
+  },
+  "corpus_pool": {
+    "policy": "common_pool_same_for_every_word",
+    "source_documents_scanned": {
+      "wikimedia_wikipedia_20231101_en_common": 800000,
+      "wikitext_103_raw": 1809468
+    },
+    "sources": {
+      "wikimedia_wikipedia_20231101_en_common": {
+        "dataset": "wikimedia/wikipedia",
+        "max_records": 800000,
+        "records_policy": "first 800000 train records",
+        "subset": "20231101.en"
+      },
+      "wikitext_103_raw": {
+        "dataset": "wikitext-103-raw",
+        "records_policy": "all available records"
+      }
+    }
+  },
+  "downstream_static_prototype_policy": {
+    "formula": "p_w = (1/100) * sum_i x_raw[w,i]",
+    "l2_after_mean": false,
+    "l2_before_mean": false,
+    "prototype_already_stored_in_master_dataset": false,
+    "prototype_definition": "arithmetic mean of the 100 raw contextual occurrence embeddings for each word"
+  },
+  "final_dataset": {
+    "n_row_groups": 10303,
+    "n_rows": 10302900,
+    "n_words": 103029,
+    "occurrence_level": true,
+    "occurrences_per_word": 100,
+    "ordered_by": [
+      "word ASC",
+      "sample_priority ASC"
+    ],
+    "row_group_target_rows": 1000
+  },
+  "model": {
+    "architecture": "BERT-base uncased",
+    "embedding_dim": 768,
+    "embedding_dtype": "float32",
+    "l2_normalized": false,
+    "layer_aggregation": "mean",
+    "name": "bert-base-uncased",
+    "selected_layers": [
+      -4,
+      -3,
+      -2,
+      -1
+    ],
+    "target_wordpiece_aggregation": "mean"
+  },
+  "occurrence_selection": {
+    "category_words_sampling_privilege": false,
+    "occurrences_per_word": 100,
+    "same_sampling_policy_for_all_words": true,
+    "selection_method": "blake2b_128_keep_100_smallest_unique_word_context_hashes",
+    "selection_personalization": "ctx100-v1",
+    "selection_sha256": "e130061a093ff98c3265cda041a3a86e77c6204c3509e0aa0a56405af87af087"
+  },
+  "schema_version": "ctx_v3_commonpool_equal100_rawbert",
+  "vocabulary": {
+    "automatic_candidate_contract": {
+      "custom_bad_words_excluded": true,
+      "english_stopwords_excluded_as_candidates": true,
+      "minimum_length": 3,
+      "pos_filter": null,
+      "regex": "[a-z]+"
+    },
+    "conceptual_lexicon_filter_applied": false,
+    "conceptual_lexicon_filter_note": "A downstream conceptual vocabulary may be constructed for prototype/neighbor analyses without modifying this master occurrence-level dataset.",
+    "literal_nan_excluded": true,
+    "literal_null_retained": true,
+    "minimum_unique_usable_occurrences": 100,
+    "n_words": 103029
+  }
+}

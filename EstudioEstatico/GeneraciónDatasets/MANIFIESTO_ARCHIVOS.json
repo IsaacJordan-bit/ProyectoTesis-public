@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "fecha": "2026-11-25",
+  "raiz": "ProyectoTesis/Estudio estático/GeneraciónDatasets",
+  "algoritmo": "SHA-256 de los bytes de cada archivo; el manifiesto se excluye a sí mismo.",
+  "archivos": [
+    {
+      "ruta": ".gitattributes",
+      "bytes": 151,
+      "sha256": "57e0c006c2eba7527f66a99a139e9be5314e7728548b9f7635e4f1cddaf39e9f"
+    },
+    {
+      "ruta": ".gitignore",
+      "bytes": 401,
+      "sha256": "5ab9f9ec200a49943f73a7cca017acce8141ab143455afffd0b7437b65c76729"
+    },
+    {
+      "ruta": "Glove/README.md",
+      "bytes": 2322,
+      "sha256": "9e7296549b1e2b570de067b27871f41f8be2b7a436984eb4275f957dee97ea84"
+    },
+    {
+      "ruta": "Glove/datos/README.md",
+      "bytes": 233,
+      "sha256": "27061ee9c0e01023ddd67666c94a25c3165389ac81021f444e89c15ebc461707"
+    },
+    {
+      "ruta": "Glove/descargar_glove.py",
+      "bytes": 3032,
+      "sha256": "016660d51be7d43124c735a8983142cba66bf5a210a272977dbe87367ac64962"
+    },
+    {
+      "ruta": "Glove/reconstruir_glove_50d.py",
+      "bytes": 5047,
+      "sha256": "4fdc55a2e0120b38bc9771b7807d6f0b44553540f0555f90764be754689c487b"
+    },
+    {
+      "ruta": "Glove/referencia_dataset.json",
+      "bytes": 2039,
+      "sha256": "aafa9ecee18bdb869b291dd208de85b02b316dad5fa8e987a08d5614c539c2d8"
+    },
+    {
+      "ruta": "Glove/requirements.txt",
+      "bytes": 27,
+      "sha256": "6979eeaed30ec7f45ff725f33240136e49c396fdf8a5ef12964fb2960c8a5d1e"
+    },
+    {
+      "ruta": "Glove/salida/README.md",
+      "bytes": 144,
+      "sha256": "2d5963f1b26dfb7994c0949cc90cc5efd324e372f2c047c9e814594bdbf79c93"
+    },
+    {
+      "ruta": "INSTRUCCIONES_DATOS.md",
+      "bytes": 2775,
+      "sha256": "bbb0d89c9690585694f499f64ef4ec5c9592a7884ef68203d3b51587283b0abb"
+    },
+    {
+      "ruta": "README.md",
+      "bytes": 4500,
+      "sha256": "ba36d90e412b41d5cdc14424ca21056de726a1b284675529002dd4a61887d98d"
+    },
+    {
+      "ruta": "VERIFICACION_ENTREGA.json",
+      "bytes": 2867,
+      "sha256": "925c785813942f0dd77c4981b366fee91cc54d434b10acefde4be2a65935433d"
+    },
+    {
+      "ruta": "W2V/README.md",
+      "bytes": 3001,
+      "sha256": "aad94620cbac2e6df48d52164b0eb60232b2a6b278a61d6f1e0e3adb11c2d678"
+    },
+    {
+      "ruta": "W2V/datos/README.md",
+      "bytes": 255,
+      "sha256": "65f80216f1e97e8e53ed196b8f04a7fbcc6971fb8afa7acef0c4ea5ee0d22368"
+    },
+    {
+      "ruta": "W2V/descargar_word2vec.py",
+      "bytes": 3583,
+      "sha256": "f80b2b0be7c0d0139c0af0b49fa5e5c1c1dd26f2645e76dbe7d1a4f517bfa217"
+    },
+    {
+      "ruta": "W2V/informe_limpieza.csv",
+      "bytes": 449,
+      "sha256": "f77e2eff8f464cebfa2736c36daa93b1f000f13f3c4699cfdc2ff38af7aa42d2"
+    },
+    {
+      "ruta": "W2V/metadata_dataset.json",
+      "bytes": 1424,
+      "sha256": "6ef324125f9d0171f6407020f14a25781ea1b1284a6df641ec0325862907b382"
+    },
+    {
+      "ruta": "W2V/reconstruir_word2vec_definitivo.py",
+      "bytes": 6674,
+      "sha256": "52c96921245c5de788f30cebd6611ec3320bf9d508ecd839c5d6ddfa48895ade"
+    },
+    {
+      "ruta": "W2V/referencia_dataset.json",
+      "bytes": 1549,
+      "sha256": "c44515d6c2535a0710a3b904aa4bddfdd8a4dfb3cf688e80ce867abe94a7fe0d"
+    },
+    {
+      "ruta": "W2V/requirements.txt",
+      "bytes": 27,
+      "sha256": "6979eeaed30ec7f45ff725f33240136e49c396fdf8a5ef12964fb2960c8a5d1e"
+    },
+    {
+      "ruta": "W2V/salida/README.md",
+      "bytes": 171,
+      "sha256": "9de48d716cf6839e15c982df0c22cbba8248d374df80420c75332382293474e5"
+    },
+    {
+      "ruta": "W2V/seleccion_vocabulario.csv.gz",
+      "bytes": 7769083,
+      "sha256": "a974c0af240b9e1e781d947d1b296e06fee63a4f7a8ee2f2ec2c006ff8d2c384"
+    },
+    {
+      "ruta": "W2V/verificacion_reconstruccion_aportada.json",
+      "bytes": 1196,
+      "sha256": "bf16eff6b66e98b5ec2def00ae26e032bef3747b40d739c18e101076c12b13d9"
+    },
+    {
+      "ruta": "verificar_paquete.py",
+      "bytes": 1184,
+      "sha256": "ccaa1f85904dbda17c003fe9ea09a702ec8077fa31bdbc0341d3bfe9adadca86"
+    }
+  ]
+}

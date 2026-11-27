@@ -1,0 +1,6 @@
+{
+  "e2_k40_hfy.py": "7cec929ffbd447b597ec530e605759e05e054d739f49a0c2d0445bfdc1bb7c3c",
+  "e2_k40_reference.py": "ef2bd4039b7ca1f4577b6a11f342df89d1665807d92666e0a3fb7803d5268680",
+  "reference/hopfield.py": "cb1842cc841969ee890e47570b79af27966b7a04161b15c1b0bc8583b24243f3",
+  "reference/hopfield_fenchel_young.py": "97f32eb2a814e660c26832a33b7923dcd96c36373b67a76cdd972430e7c026ca"
+}

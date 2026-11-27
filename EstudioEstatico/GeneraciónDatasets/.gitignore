@@ -1,0 +1,19 @@
+# Fuentes grandes y datasets generados: se conservan localmente.
+Glove/datos/*
+!Glove/datos/README.md
+Glove/salida/*
+!Glove/salida/README.md
+W2V/datos/*
+!W2V/datos/README.md
+W2V/salida/*
+!W2V/salida/README.md
+
+# Entornos y archivos temporales de ejecución.
+**/__pycache__/
+**/*.py[cod]
+**/.venv/
+**/venv/
+**/.ipynb_checkpoints/
+**/*.part
+
+# El mapeo W2V/seleccion_vocabulario.csv.gz SÍ se versiona.

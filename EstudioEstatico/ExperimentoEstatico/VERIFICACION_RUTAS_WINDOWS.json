@@ -1,0 +1,76 @@
+{
+  "plataforma_pruebas": "linux",
+  "conversion_unidad_UNC_y_prefijo_existente": true,
+  "extraccion_lectura_y_reutilizacion_ruta_mayor_360_caracteres": true,
+  "escape_del_destino_rechazado": true,
+  "auditoria_estructural_reconstruida": {
+    "status": "COMPLETE",
+    "outcomes_read": false,
+    "models_fitted": false,
+    "classification_rerun": false,
+    "export_files_verified": 450,
+    "historical_receipt_entries_verified": 397,
+    "archived_geometries": 43,
+    "distinct_source_geometries": 9,
+    "folds_verified": 225,
+    "design_pairs_verified": 525,
+    "source_module_sha256": "ef2bd4039b7ca1f4577b6a11f342df89d1665807d92666e0a3fb7803d5268680",
+    "input_manifest_sha256": "b9e15953d38405774c2c8fb9602835323cce25396afa2cd0f3beae1a46e6de52",
+    "first_admissible_in_audited_range": {
+      "GloVe": 40,
+      "W2V": 40
+    },
+    "missing_geometries": [
+      {
+        "dataset": "W2V",
+        "K": 60,
+        "status": "NOT_PROVIDED"
+      },
+      {
+        "dataset": "W2V",
+        "K": 70,
+        "status": "NOT_PROVIDED"
+      },
+      {
+        "dataset": "W2V",
+        "K": 80,
+        "status": "NOT_PROVIDED"
+      },
+      {
+        "dataset": "W2V",
+        "K": 90,
+        "status": "NOT_PROVIDED"
+      },
+      {
+        "dataset": "W2V",
+        "K": 100,
+        "status": "NOT_PROVIDED"
+      }
+    ],
+    "train_embedding_bytes_verified": false,
+    "nearest_neighbor_selection_recomputed": false,
+    "lower_K_claim": false,
+    "minimum_two_words_per_cell_imposed": false,
+    "covariance_or_independent_sample_size_claim": false,
+    "software": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "sklearn": "1.8.0"
+    },
+    "seconds": 19.95356400699893
+  },
+  "W2V": {
+    "archivos_export_verificados": 676,
+    "diagnosticos_CV": 3825,
+    "checkpoints_CV_incluidos": 75,
+    "checkpoints_CV_no_incluidos": 3750,
+    "refits_verificados": 27,
+    "coeficientes_verificados": true,
+    "nuevos_ajustes": 0,
+    "nuevas_clasificaciones": 0
+  },
+  "limite": "Ejecución comprobada en Linux; la extracción real en Windows debe confirmarse en el equipo del usuario.",
+  "alcance_temporal": "Comprobación previa de rutas; la verificación vigente del estudio está en VERIFICACION_ETAPA_1_2.json."
+}

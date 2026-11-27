@@ -1,0 +1,24 @@
+{
+  "modelo": "word2vec-google-news-300",
+  "descarga_gensim": "https://github.com/piskvorky/gensim-data/releases/download/word2vec-google-news-300/word2vec-google-news-300.gz",
+  "gzip_bytes": 1743563840,
+  "gzip_md5_verificado": "a5e5354d40acb95f9ec66d5977d140ef",
+  "binario": "GoogleNews-vectors-negative300.bin",
+  "binario_bytes": 3644258522,
+  "binario_sha256": "6cb30ecf940501bdb0a0b2921562d4008ab3e461c342b44b48f801211f9c0f8e",
+  "forma_fuente": [
+    3000000,
+    300
+  ],
+  "script": "reconstruir_word2vec_definitivo.py",
+  "modo_seleccion": "CSV histórico de correspondencias, comprobando posición y token de cada entrada seleccionada",
+  "dataset": "w2v_google_news_top3000000_relaxed_lowercase_clean",
+  "forma_reconstruida": [
+    653346,
+    300
+  ],
+  "tipo_valores": "float32",
+  "indice_sha256_utf8_una_palabra_por_linea_LF": "28eaaf7828a2dac985708acc71417a41c3a00e83a3b645a4c986b4f3e8b20b19",
+  "matriz_sha256_float32_little_endian_por_filas": "c03107624c7bdd21453b1dbf01f3cc74b9de5d3b125c56fd0b230dc464781ef1",
+  "resultado": "El índice ordenado y la matriz reconstruida coinciden con las huellas del PKL de referencia, también tras volver a leer el PKL reconstruido."
+}

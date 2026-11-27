@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "ProyectoTesis: Semantic Interference in Modern Associative Memories"
+type: software
+authors:
+  - given-names: "Jordan Isaac"
+    family-names: "Pérez Domínguez"
+repository-code: "https://github.com/IsaacJordan-bit/ProyectoTesis-public"
+url: "https://github.com/IsaacJordan-bit/ProyectoTesis-public"
+keywords:
+  - semantic interference
+  - associative memories
+  - modern Hopfield networks
+  - Hopfield-Fenchel-Young networks
+  - semantic representations
+  - contextual embeddings
+  - GloVe
+  - Word2Vec
+  - BERT
+  - reproducibility

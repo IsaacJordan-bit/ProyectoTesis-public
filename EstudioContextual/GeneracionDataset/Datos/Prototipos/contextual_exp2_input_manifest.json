@@ -1,0 +1,80 @@
+{
+  "artifacts": {
+    "manifest": "C:\\Users\\jisaa\\Workspace\\Tesis\\Exp2\\Results\\ResultsExp2_prototipos\\ctx_v3_equal100\\03_exp2_input\\contextual_exp2_input_manifest.json",
+    "neighbors_json": "C:\\Users\\jisaa\\Workspace\\Tesis\\Exp2\\Results\\ResultsExp2_prototipos\\ctx_v3_equal100\\03_exp2_input\\contextual_exp2_centroid_neighbors_wordnet_v1.json",
+    "parquet": "C:\\Users\\jisaa\\Workspace\\Tesis\\Exp2\\Results\\ResultsExp2_prototipos\\ctx_v3_equal100\\03_exp2_input\\contextual_exp2_embeddings_rawmean100_wordnet_v1.parquet",
+    "parquet_sha256": "1de6e054f530f0b1d2a29362f0dfc703cdcd39f945988d9be3d695db75587f9f",
+    "pickle": "C:\\Users\\jisaa\\Workspace\\Tesis\\Exp2\\Results\\ResultsExp2_prototipos\\ctx_v3_equal100\\03_exp2_input\\contextual_exp2_embeddings_rawmean100_wordnet_v1.pkl",
+    "pickle_sha256": "9912f7487bb49539fa3d4e205033d1fbf445f99ec32f70a839059980927f5098",
+    "vocabulary_csv": "C:\\Users\\jisaa\\Workspace\\Tesis\\Exp2\\Results\\ResultsExp2_prototipos\\ctx_v3_equal100\\03_exp2_input\\contextual_exp2_vocabulary_wordnet_v1.csv"
+  },
+  "category_words": {
+    "all_present": true,
+    "n": 8,
+    "sha256": "baa6a37119d639f91afcca9168937cfbb2b482cdc4262c6b705aa334c0a9391f",
+    "words": [
+      "apple",
+      "bicycle",
+      "bread",
+      "canoe",
+      "chair",
+      "jellyfish",
+      "screwdriver",
+      "skunk"
+    ]
+  },
+  "conceptual_vocabulary": {
+    "approved": true,
+    "master_prototypes_modified": false,
+    "master_vocabulary_modified": false,
+    "method": "wordnet_synset_or_morphy_v1",
+    "n_words": 50455,
+    "vocabulary_sha256": "95d87d7ce442dd36699ab0ff7bdd8bd12c10e5460f642f6ba4a514369e088edc"
+  },
+  "embedding_identity": {
+    "all_finite": true,
+    "dtype_for_fingerprint": "float64_little_endian",
+    "embedding_dim": 768,
+    "n_words": 50455,
+    "n_zero_norm": 0,
+    "norm_max": 17.509882904264014,
+    "norm_mean": 14.141572562452666,
+    "norm_median": 14.103750442505444,
+    "norm_min": 10.793376410246344,
+    "scientific_sha256": "0590ffe496e1c0da00b399e4773d715f835b17ce2c0b0004ff19fcd3c7269593"
+  },
+  "embedding_name": "bert_contextual_prototype_rawmean100_wordnet_v1",
+  "master_dataset": {
+    "n_rows": 10302900,
+    "n_words": 103029,
+    "selection_sha256": "e130061a093ff98c3265cda041a3a86e77c6204c3509e0aa0a56405af87af087",
+    "wordpiece_policy": "target_centered_wordpiece_crop"
+  },
+  "neighbor_selection": {
+    "K_MAX": 20,
+    "K_MIN": 6,
+    "all_classes_reach_K_MAX": true,
+    "all_classes_reach_K_MIN": true,
+    "augmented_set_size": 160,
+    "n_classes": 8,
+    "neighbor_selection_success": true
+  },
+  "representation": {
+    "clustering": false,
+    "embedding_dim": 768,
+    "l2_after_mean": false,
+    "l2_before_mean": false,
+    "occurrences_per_word": 100,
+    "prototype_definition": "p_w = (1/100) * sum_i x_raw[w,i]",
+    "pseudo_senses": false,
+    "source_model": "bert-base-uncased"
+  },
+  "semantic_diagnostic": {
+    "automatic_target_sense_selection": false,
+    "glove_used_as_semantic_ground_truth": false,
+    "interpretation": "Neighborhood divergence and corpus-driven polysemy are treated as properties of the representation, not corrected post hoc.",
+    "manual_neighbor_filtering": false,
+    "performed": true
+  },
+  "status": "EXP2_CONTEXTUAL_INPUT_FINALIZED"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_limit": 3000000,
+  "dataset_name": "w2v_google_news_top3000000_relaxed_lowercase_clean",
+  "shape": [
+    653346,
+    300
+  ],
+  "cleaning_config": {
+    "min_word_len": 2,
+    "max_word_len": 28,
+    "normalize_to_lowercase": true,
+    "allow_underscores": false,
+    "allow_digits": false,
+    "allow_hyphens": false,
+    "remove_stopwords": true,
+    "drop_short_allcaps": true,
+    "short_allcaps_max_len": 5,
+    "duplicate_resolution": "prefer_exact_lowercase_else_first_by_google_news_rank"
+  },
+  "required_centroids": [
+    "apple",
+    "bicycle",
+    "bread",
+    "canoe",
+    "chair",
+    "jellyfish",
+    "screwdriver",
+    "skunk"
+  ],
+  "missing_required_centroids": [],
+  "report_counts": {
+    "non_alpha_or_symbol": 49290,
+    "stopword": 827,
+    "kept_exact_lowercase": 128626,
+    "short_allcaps_acronym": 72923,
+    "too_short": 665,
+    "hyphen": 2118,
+    "digit": 10000,
+    "kept_normalized_lowercase": 524720,
+    "duplicate_after_lowercase": 109012,
+    "no_vowel": 4681,
+    "underscore_or_multiword": 2070978,
+    "duplicate_replaced_by_exact_lowercase": 24444,
+    "too_long": 1428,
+    "repeated_characters": 288,
+    "raw_loaded": 3000000,
+    "unique_clean_tokens": 653346,
+    "duplicates_removed_final_df": 0,
+    "final_rows": 653346,
+    "vector_dim": 300
+  },
+  "nota": "Configuración documentada del dataset de referencia. La reproducción usa el mapeo completo incluido."
+}

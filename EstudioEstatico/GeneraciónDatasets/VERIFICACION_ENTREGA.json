@@ -1,0 +1,74 @@
+{
+  "fecha": "2026-11-25",
+  "etapa": "1.1: reproducción de GloVe y Word2Vec",
+  "estado": "CERRADA",
+  "criterio": "Identidad del vocabulario ordenado y todos los valores de los vectores.",
+  "entorno": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "glove": {
+    "reconstruccion_completa_ejecutada": true,
+    "exportacion_y_lectura_exactas": true,
+    "informe": {
+      "forma": [
+        399997,
+        50
+      ],
+      "dtype": "float64",
+      "sha256_indice_y_matriz": "2ed0d282c625464365043d10405cf31064babdbbe3a6aee1095e2c0589165da1",
+      "normas_l2": [
+        0.04693154286091541,
+        4.474556674375726,
+        14.121561584771847
+      ],
+      "sha256_txt": "d8f717f8dd4b545cb7f418ef9f3d0c3e6e68a6f48b97d32f8b7aae40cb31f96f",
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "indice_y_vectores_verificados": true,
+      "pkl_verificado_tras_lectura": true,
+      "archivo_salida": "generacion_final_glove_prueba.pkl"
+    },
+    "extraccion_zip_local_verificada": true,
+    "descarga_remota_completa_ejecutada": false,
+    "fuente_descarga_http_head": 200,
+    "nota_descarga": "El TXT aportado se utilizó en la reproducción; se probó la extracción desde ZIP y la accesibilidad de la distribución remota."
+  },
+  "w2v": {
+    "descarga_y_descompresion_remota_completas_ejecutadas": true,
+    "md5_gzip_y_sha256_binario_verificados": true,
+    "reconstruccion_completa_desde_google_news_ejecutada": true,
+    "exportacion_y_lectura_exactas": true,
+    "informe": {
+      "forma": [
+        653346,
+        300
+      ],
+      "dtype": "float32",
+      "sha256_indice": "28eaaf7828a2dac985708acc71417a41c3a00e83a3b645a4c986b4f3e8b20b19",
+      "sha256_vectores": "c03107624c7bdd21453b1dbf01f3cc74b9de5d3b125c56fd0b230dc464781ef1",
+      "sha256_mapeo_logico": "1f0672692faab63b3d9fc49431a3ced3369a6e4e3d606d9c91e068b9c22d06af",
+      "dataset": "w2v_google_news_top3000000_relaxed_lowercase_clean",
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "indice_y_vectores_verificados": true,
+      "pkl_verificado_tras_lectura": true,
+      "archivo_salida": "generacion_final_w2v_prueba.pkl"
+    },
+    "mapeo_gzip_descomprimido_identico_al_csv_original": true,
+    "mapeo_csv_bytes": 36738280,
+    "sha256_protocolo_estatico_verificado": "46ff0909ffbe358937f50225ce821b56140dd4b3c4a35638a83c9d919dbdfb39"
+  },
+  "paquete": {
+    "codigo_python_sintaxis_correcta": true,
+    "ayuda_cli_cuatro_scripts_correcta": true,
+    "gitignore_excluye_datos_y_salidas": true,
+    "gitignore_conserva_mapeo_y_readmes": true,
+    "entradas_grandes_incluidas": false,
+    "pkl_generados_incluidos": false
+  },
+  "alcance": "Generación de datasets base; no se reejecutaron redes, clasificadores ni modelos estadísticos. Prototipos BERT fuera de esta entrega."
+}

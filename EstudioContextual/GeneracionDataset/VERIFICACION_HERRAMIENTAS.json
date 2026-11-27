@@ -1,0 +1,13 @@
+{
+  "collector_real_io_synthetic_fixtures": "PASS: prototypes preference, exact sample, byte equality, hashes, unrelated files excluded, input unchanged",
+  "collector_options_and_overwrite": "PASS",
+  "incomplete_sample_rejected": "PASS",
+  "original_code_cells_compile": 34,
+  "original_wordpiece_crop": "PASS: 34 boundary cases and 3 invalid cases",
+  "limits": [
+    "Synthetic fixtures are not real dataset validation.",
+    "Windows extended paths implemented but not executed on Windows.",
+    "BERT, corpus scan and prototype generation not executed.",
+    "Stage 2.1 remains open pending actual artifacts."
+  ]
+}

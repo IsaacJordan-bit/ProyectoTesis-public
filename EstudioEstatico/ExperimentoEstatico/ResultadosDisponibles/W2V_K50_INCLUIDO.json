@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "partes": [
+    "W2V_K50_resultados_01.zip",
+    "W2V_K50_resultados_02.zip",
+    "W2V_K50_resultados_03.zip",
+    "W2V_K50_resultados_04.zip",
+    "W2V_K50_resultados_05.zip",
+    "W2V_K50_resultados_06.zip"
+  ],
+  "archivos": 12277,
+  "K": 50,
+  "rol": "ANEXO_SENSIBILIDAD",
+  "paths": {
+    "audit_root": "audit_f4766816e364f73e7b47",
+    "model_root": "audit_f4766816e364f73e7b47/K50/MODEL_SEARCH/search_8ab640f6ba94317eb9ec",
+    "refit_root": "audit_f4766816e364f73e7b47/K50/MODEL_SEARCH/search_8ab640f6ba94317eb9ec/FULL_LOCO/refit_3d35ee4f9e55880d936a"
+  }
+}

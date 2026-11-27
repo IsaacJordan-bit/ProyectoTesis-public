@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "partes": [
+    "GloVe_K40_resultados_01.zip",
+    "GloVe_K40_resultados_02.zip",
+    "GloVe_K40_resultados_03.zip",
+    "GloVe_K40_resultados_04.zip",
+    "GloVe_K40_resultados_05.zip"
+  ],
+  "archivos": 11905,
+  "paths": {
+    "gk83_root": "GloVe/scale_d3399476d688141441a5",
+    "model_root": "GloVe/search_b77d2b37e15428d6bf13",
+    "refit_root": "GloVe/search_b77d2b37e15428d6bf13/GK88G_SELECTED_FULL_LOCO/refit_addb067bc5bf230730d5"
+  },
+  "geometry_archive": "E2_Geometrias_K20_K30.zip",
+  "geometry_root": "GloVe/search_5e904ca15f3dcc8dd6d7"
+}

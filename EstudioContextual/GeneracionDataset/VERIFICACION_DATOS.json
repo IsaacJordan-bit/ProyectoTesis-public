@@ -1,0 +1,16 @@
+{
+  "prototype_shape": [
+    50455,
+    768
+  ],
+  "prototype_dtypes": [
+    "float64"
+  ],
+  "prototype_vocabulary_sha256": "95d87d7ce442dd36699ab0ff7bdd8bd12c10e5460f642f6ba4a514369e088edc",
+  "prototype_scientific_sha256": "0590ffe496e1c0da00b399e4773d715f835b17ce2c0b0004ff19fcd3c7269593",
+  "prototype_file_sha256": "9912f7487bb49539fa3d4e205033d1fbf445f99ec32f70a839059980927f5098",
+  "prototype_bytes_verified": true,
+  "master_vocabulary_size": 103029,
+  "master_index_verified": true,
+  "occurrence_bytes_verified": false
+}

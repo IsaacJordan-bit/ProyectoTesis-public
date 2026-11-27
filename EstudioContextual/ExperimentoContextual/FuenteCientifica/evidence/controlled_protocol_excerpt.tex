@@ -1,0 +1,87 @@
+\section{Comparación controlada del aporte contextual}
+\label{sec:met-controlado}
+
+\subsection{Pregunta y tarea común}
+
+El protocolo controlado pregunta si, en una tarea fija, conservar diferenciación entre ocurrencias mediante pseudo-sentidos o vectores originales modifica favorablemente los comportamientos globales y su robustez respecto de reemplazarla por el promedio por palabra. Se mantiene $K=80$, con las 640 palabras, ocho clases, etiquetas, competidores y 51 particiones del referente S. Cada palabra tiene una sola etiqueta, heredada por todas sus ocurrencias y pseudo-sentidos.
+
+K80 se adopta porque el referente de ocho clases dispone de soporte estructural para los cinco bins en el recorrido auditado. La auditoría histórica del referente rechaza K40, K50, K60 y K70 por falta de cobertura, y registra K80 con 414 palabras FULL y 376 COMMON. La preparación deberá reproducir esos inventarios y su identidad antes de ejecutar los nuevos ensayos. No se comparará una tarea no estimable en un brazo con otra tarea distinta que sí lo sea, ni se elegirá $K$ por la magnitud de una ventaja observada.
+
+Mantener ocho clases evita que dos copias del mismo promedio por palabra reciban etiquetas incompatibles procedentes de centros de pseudo-sentido distintos. Las categorías permanecen operacionales y comunes a todos los brazos. Este diseño responde a una pregunta condicionada a K80; no evalúa si inducir pseudo-sentidos permite construir tareas admisibles con un $K$ menor.
+
+\subsection{Intervención A/P/O con posiciones comunes}
+
+Para cada palabra $w$ y cada una de sus 100 posiciones canónicas se establecen tres representaciones:
+\begin{equation}
+\mathbf r_A(w,j)=\mathbf a_w,\qquad
+\mathbf r_P(w,j)=\mathbf p_{w,g(j)},\qquad
+\mathbf r_O(w,j)=\mathbf x_{wj},
+\label{eq:met-intervencion}
+\end{equation}
+donde $g(j)$ es la pertenencia congelada de la ocurrencia a un pseudo-sentido. A elimina la diferenciación entre apariciones de la misma palabra; P conserva diferencias entre grupos, pero no dentro de cada grupo; O conserva los vectores individuales.
+
+Todas las palabras aportan 100 posiciones en las tres representaciones. En A contienen copias de la media; en P, copias del prototipo según su soporte; en O, las ocurrencias originales. De esta manera, para cada split existen exactamente $100|\mathcal L_s|$ posiciones de memoria en cualquier brazo. Las consultas de inferencia conservan también las mismas posiciones e identificadores.
+
+Las copias son una forma de controlar la multiplicidad del operador, no nuevas observaciones independientes. Eliminar duplicados sin compensación cambia los pesos de atención y puede cambiar de modo distinto Softmax, Entmax y Normmax. Una compresión computacional solo será válida si reproduce el operador con sus multiplicidades. También se verificará la identidad ponderada de la ecuación~\eqref{eq:met-identidad-medias}; no se construirá A como una media no ponderada de prototipos.
+
+La intervención conserva simultáneamente el corpus, el encoder y las apariciones utilizadas. Las diferencias de norma, dispersión y geometría que resultan de promediar forman parte de la intervención representacional. Por ello, el efecto no se identifica exclusivamente con una noción lingüística abstracta de sentido.
+
+\subsection{Nueve condiciones y contrastes}
+
+Se cruzan tres representaciones de memoria con tres representaciones de consulta, según la tabla~\ref{tab:met-factorial}. Los contrastes principales son P/P frente a A/A y O/O frente a A/A. Los cruces permiten separar cambios de memoria y de consulta y examinar su interacción.
+
+\begin{table}[tbp]
+\centering
+\caption{Diseño controlado de memoria por consulta. La primera letra identifica las memorias y la segunda las consultas de inferencia.}
+\label{tab:met-factorial}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Memoria / Consulta & A & P & O \\
+\midrule
+A & A/A & A/P & A/O \\
+P & P/A & P/P & P/O \\
+O & O/A & O/P & O/O \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Para cada tendencia se informarán, entre otras, las diferencias emparejadas
+\begin{equation}
+\Delta_k^{P}=T_k^{P/P}-T_k^{A/A},\qquad
+\Delta_k^{O}=T_k^{O/O}-T_k^{A/A},\qquad k=1,2,3.
+\label{eq:met-contrastes-control}
+\end{equation}
+Las comparaciones conservan palabra, ocurrencia, red, beta, split y semilla. Un cambio de signo esperado se distingue de un cambio de magnitud dentro del mismo signo. Si ambas condiciones cumplen una tendencia, ello no demuestra equivalencia; se comparan los márgenes y las omisiones críticas.
+
+Los efectos de memoria pueden examinarse comparando P/A u O/A con A/A, y los de consulta comparando A/P o A/O con A/A. Para una tendencia $T_k$, una diferencia de diferencias como
+\begin{equation}
+\mathcal I_k^P=T_k^{P/P}-T_k^{P/A}-T_k^{A/P}+T_k^{A/A}
+\label{eq:met-interaccion-control}
+\end{equation}
+resume la no aditividad de los dos cambios sobre esa escala. Se trata de un contraste descriptivo del diseño, no de una prueba inferencial que suponga independencia de las celdas o de los ensayos.
+
+\subsection{Controles de aprendizaje, escala y clasificación}
+
+Todas las ocurrencias y pseudo-sentidos de una palabra permanecen en aprendizaje o en inferencia según el split común. No se incorporan vectores de palabras de inferencia a las memorias, al entrenamiento del clasificador ni a la calibración. Sus promedios y agrupaciones solo construyen sus consultas dentro del benchmark de representaciones fijas. El procedimiento no pretende evaluar una extracción e inducción completas sobre un corpus externo no observado.
+
+Para cada split se calculará
+\begin{equation}
+\rho_s=\operatorname{mediana}\{\|\mathbf a_w\|_2:w\in\mathcal L_s\},
+\label{eq:met-rho-comun}
+\end{equation}
+con una entrada por palabra. El mismo valor normalizará las claves de A, P y O según la ecuación~\eqref{eq:met-keynorm}. Valores y consultas permanecerán RAW. La calibración HFY utilizará únicamente la memoria A de aprendizaje, con las multiplicidades reales, y una escala por red y split se mantendrá en todos los brazos. No se recalibrarán P y O para recuperar determinados signos o para igualar sus errores.
+
+El observador de clasificación utilizará siempre una consulta de entrenamiento A por palabra: su promedio RAW, recuperado con la memoria A, P u O correspondiente. Esos estados, una fila por palabra y con las mismas etiquetas, entrenarán el ensemble. Para cada memoria, red, beta, split y semilla se entrenará un único ensemble que evaluará los tres tipos de consulta de inferencia.
+
+Los coeficientes del clasificador podrán cambiar cuando cambien los estados recuperados. Lo que permanece común es la receta de entrenamiento, sus unidades, etiquetas y semillas; no se impone artificialmente el mismo clasificador ajustado a representaciones diferentes. La intervención mide el efecto de cambiar la representación bajo ese procedimiento común de observación.
+
+\subsection{Evaluación común y conclusiones permitidas}
+
+Los competidores, similitudes, momentos de clase, COMMON y cinco bins se conservarán a partir del referente S. No se reconstruirán vecinos para cada representación. La expansión a posiciones de ocurrencia no modifica el inventario geométrico de palabras. Las tasas se agregarán primero por palabra y luego con los mismos pesos de clase/bin en todos los brazos.
+
+Se utilizarán CORE3, una iteración, 98 betas, 51 splits y diez semillas de clasificación. El modelo principal será \texttt{S\_TENSOR\_SHARED} con Ridge $10^{-4}$ y la sensibilidad será \texttt{H\_BETA\_LINEAR\_Z} con Ridge $0{,}1$. Se conservarán CV por palabra, MATCHED5, GRID30 y ocho omisiones empíricas y estadísticas. Las discrepancias entre superficies y modelos se informarán sin seleccionar una receta por sus signos.
+
+Antes de ejecutar se verificará la identidad de las 100 ocurrencias, sus pertenencias, promedios, etiquetas, posiciones y roles; se reproducirá la geometría K80 y se comprobará la procedencia exclusivamente de aprendizaje de las escalas. Si un control falla, se documentará la incompatibilidad antes de modificar el diseño. No se sustituirán datos o parámetros silenciosamente.
+
+La comparación permitirá atribuir diferencias a la intervención representacional definida dentro de esta tarea y este procedimiento. No demostrará superioridad para cualquier $K$, corpus o encoder, validez lingüística de todos los pseudo-sentidos ni causalidad psicológica humana. Los antecedentes exploratorios ya examinados forman parte del origen del diseño; la nueva ejecución no se presentará como una confirmación completamente independiente de toda la exploración previa. Los resultados nulos, contradictorios o desfavorables se conservarán.
+

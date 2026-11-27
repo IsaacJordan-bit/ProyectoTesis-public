@@ -1,0 +1,403 @@
+{
+  "status": "COMPLETE",
+  "outcomes_read": false,
+  "models_fitted": false,
+  "classification_rerun": false,
+  "export_files_verified": 450,
+  "historical_receipt_entries_verified": 397,
+  "archived_geometries": 43,
+  "distinct_source_geometries": 9,
+  "folds_verified": 225,
+  "design_pairs_verified": 525,
+  "source_module_sha256": "ef2bd4039b7ca1f4577b6a11f342df89d1665807d92666e0a3fb7803d5268680",
+  "input_manifest_sha256": "b9e15953d38405774c2c8fb9602835323cce25396afa2cd0f3beae1a46e6de52",
+  "first_admissible_in_audited_range": {
+    "GloVe": 40,
+    "W2V": 40
+  },
+  "missing_geometries": [
+    {
+      "dataset": "W2V",
+      "K": 60,
+      "status": "NOT_PROVIDED"
+    },
+    {
+      "dataset": "W2V",
+      "K": 70,
+      "status": "NOT_PROVIDED"
+    },
+    {
+      "dataset": "W2V",
+      "K": 80,
+      "status": "NOT_PROVIDED"
+    },
+    {
+      "dataset": "W2V",
+      "K": 90,
+      "status": "NOT_PROVIDED"
+    },
+    {
+      "dataset": "W2V",
+      "K": 100,
+      "status": "NOT_PROVIDED"
+    }
+  ],
+  "train_embedding_bytes_verified": false,
+  "nearest_neighbor_selection_recomputed": false,
+  "lower_K_claim": true,
+  "minimum_two_words_per_cell_imposed": false,
+  "covariance_or_independent_sample_size_claim": false,
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0"
+  },
+  "seconds": 19.387361237000732,
+  "grilla": [
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100
+  ],
+  "auditoria_K20_K30": {
+    "archivos_verificados": 48,
+    "detalles": {
+      "GloVe_K20": {
+        "random_seed_split": 0,
+        "frequency_threshold": 2,
+        "effective_min_class_frequency": 3,
+        "validation_split": 0.33,
+        "pairwise_different_class": true,
+        "n_reference_words": 160,
+        "n_nearest_words_unique": 50,
+        "n_validation_candidates": 110,
+        "n_validation_target": 52,
+        "n_validation_before_filter": 52,
+        "n_validation_after_filter": 50,
+        "n_training_before_filter": 108,
+        "n_training_after_filter": 108,
+        "validation_fraction_final": 0.31645569620253167,
+        "training_counts_before_filter": {
+          "6": 11,
+          "0": 12,
+          "7": 18,
+          "2": 12,
+          "4": 12,
+          "1": 17,
+          "3": 12,
+          "5": 14
+        },
+        "validation_counts_before_filter": {
+          "7": 2,
+          "0": 8,
+          "4": 8,
+          "6": 9,
+          "3": 8,
+          "5": 6,
+          "2": 8,
+          "1": 3
+        },
+        "training_supported_classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "validation_supported_classes_initial": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "training_classes_final": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "validation_classes_final": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "dropped_training_words": [],
+        "dropped_validation_words": [
+          "anansie",
+          "nigra"
+        ],
+        "dropped_validation_by_class_filter": [
+          "anansie",
+          "nigra"
+        ],
+        "dropped_validation_missing_partner": [],
+        "dropped_validation_after_partner_frequency": []
+      },
+      "GloVe_K30": {
+        "native_bins": 4,
+        "fixed_bins": 5,
+        "empty_cells": [
+          {
+            "class_label": "bicycle",
+            "bin": 2
+          },
+          {
+            "class_label": "jellyfish",
+            "bin": 3
+          }
+        ]
+      },
+      "W2V_K20": {
+        "complete": false,
+        "dropped_training_words": [],
+        "dropped_validation_after_partner_frequency": [],
+        "dropped_validation_by_class_filter": [
+          "irukandji",
+          "seabirds",
+          "unicycle"
+        ],
+        "dropped_validation_missing_partner": [],
+        "dropped_validation_words": [
+          "irukandji",
+          "seabirds",
+          "unicycle"
+        ],
+        "effective_min_class_frequency": 3,
+        "frequency_threshold": 2,
+        "n_nearest_words_unique": 53,
+        "n_reference_words": 160,
+        "n_training_after_filter": 108,
+        "n_training_before_filter": 108,
+        "n_validation_after_filter": 49,
+        "n_validation_before_filter": 52,
+        "n_validation_candidates": 107,
+        "n_validation_target": 52,
+        "pairwise_different_class": true,
+        "random_seed_split": 2,
+        "split_seed": 2,
+        "train_array_sha": "b5526effb2edc488e38790d8190940ce5d1d465c1548bdc1fe0e94ff962b6085",
+        "train_words_sha": "edd4e08a9bf8f0dec664ff90e340dbeafe6876b85221020e7c4bfbc329e36579",
+        "training_classes_final": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "training_counts_before_filter": {
+          "0": 14,
+          "1": 19,
+          "2": 16,
+          "3": 14,
+          "4": 6,
+          "5": 18,
+          "6": 8,
+          "7": 13
+        },
+        "training_supported_classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "validation_classes_final": [
+          0,
+          2,
+          3,
+          4,
+          6,
+          7
+        ],
+        "validation_counts_before_filter": {
+          "0": 6,
+          "1": 1,
+          "2": 4,
+          "3": 6,
+          "4": 14,
+          "5": 2,
+          "6": 12,
+          "7": 7
+        },
+        "validation_fraction_final": 0.31210191082802546,
+        "validation_split": 0.33,
+        "validation_supported_classes_initial": [
+          0,
+          2,
+          3,
+          4,
+          6,
+          7
+        ]
+      },
+      "W2V_K30": {
+        "complete": false,
+        "dropped_training_words": [],
+        "dropped_validation_after_partner_frequency": [],
+        "dropped_validation_by_class_filter": [
+          "bicyles",
+          "cycling"
+        ],
+        "dropped_validation_missing_partner": [],
+        "dropped_validation_words": [
+          "bicyles",
+          "cycling"
+        ],
+        "effective_min_class_frequency": 3,
+        "frequency_threshold": 2,
+        "n_nearest_words_unique": 74,
+        "n_reference_words": 240,
+        "n_training_after_filter": 161,
+        "n_training_before_filter": 161,
+        "n_validation_after_filter": 77,
+        "n_validation_before_filter": 79,
+        "n_validation_candidates": 166,
+        "n_validation_target": 79,
+        "pairwise_different_class": true,
+        "random_seed_split": 4,
+        "split_seed": 4,
+        "train_array_sha": "d4ff1c9acdb14972fffe0bd3ea5574aed053994e29ceb810581ac2965acf5594",
+        "train_words_sha": "fce0f6d651a75b8ab8e288af1d205e165ed05de3dca8091e312508421bf10b5f",
+        "training_classes_final": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "training_counts_before_filter": {
+          "0": 22,
+          "1": 28,
+          "2": 20,
+          "3": 21,
+          "4": 15,
+          "5": 18,
+          "6": 18,
+          "7": 19
+        },
+        "training_supported_classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "validation_classes_final": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "validation_counts_before_filter": {
+          "0": 8,
+          "1": 2,
+          "2": 10,
+          "3": 9,
+          "4": 15,
+          "5": 12,
+          "6": 12,
+          "7": 11
+        },
+        "validation_fraction_final": 0.3235294117647059,
+        "validation_split": 0.33,
+        "validation_supported_classes_initial": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    "outcomes_read": false,
+    "models_fitted": false,
+    "classification_rerun": false
+  },
+  "seleccion": {
+    "glove": {
+      "dataset": "glove",
+      "K": 40,
+      "criterio": "FIRST_STRUCTURALLY_ADMISSIBLE",
+      "grilla_candidata": [
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ],
+      "K_evaluadas_hasta_seleccion": [
+        20,
+        30,
+        40
+      ],
+      "usa_T1_T2_T3": false,
+      "usa_LOCO": false
+    },
+    "w2v": {
+      "dataset": "w2v",
+      "K": 40,
+      "criterio": "FIRST_STRUCTURALLY_ADMISSIBLE",
+      "grilla_candidata": [
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ],
+      "K_evaluadas_hasta_seleccion": [
+        20,
+        30,
+        40
+      ],
+      "usa_T1_T2_T3": false,
+      "usa_LOCO": false
+    }
+  },
+  "alcance": "Primera K admisible en la grilla 20–100; W2V K60–K100 no requeridos tras aceptar K40"
+}

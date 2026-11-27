@@ -1,0 +1,23 @@
+{
+  "all_heaps_full": true,
+  "elapsed_seconds": 1619.6036991,
+  "global_documents_scanned": 2609468,
+  "n_selected_contexts": 10302900,
+  "n_words": 103029,
+  "occurrences_per_word": 100,
+  "post_selection_excluded_words": [
+    "nan"
+  ],
+  "post_selection_exclusion_reason": "lexical exclusion of literal token 'nan'; independent per-word top100 selections for all remaining words are unchanged",
+  "selection_method": "blake2b_128_keep_100_smallest_unique_word_context_hashes",
+  "selection_personalization": "ctx100-v1",
+  "selection_sha256": "e130061a093ff98c3265cda041a3a86e77c6204c3509e0aa0a56405af87af087",
+  "source_documents_scanned": {
+    "wikimedia_wikipedia_20231101_en_common": 800000,
+    "wikitext_103_raw": 1809468
+  },
+  "source_valid_occurrences_seen": {
+    "wikimedia_wikipedia_20231101_en_common": 243906932,
+    "wikitext_103_raw": 41931083
+  }
+}

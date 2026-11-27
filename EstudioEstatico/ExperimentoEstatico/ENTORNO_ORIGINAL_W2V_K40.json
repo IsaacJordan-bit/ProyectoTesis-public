@@ -1,0 +1,17 @@
+{
+  "max_workers": 14,
+  "reserve_gib": 3.0,
+  "software": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "python": "3.11.9",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  },
+  "source_software": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  }
+}

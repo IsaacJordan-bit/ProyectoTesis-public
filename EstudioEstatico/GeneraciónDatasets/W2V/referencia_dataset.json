@@ -1,0 +1,26 @@
+{
+  "modelo": "Word2Vec Google News 300D",
+  "dataset": "w2v_google_news_top3000000_relaxed_lowercase_clean",
+  "forma": [
+    653346,
+    300
+  ],
+  "dtype": "float32",
+  "codigo_reproduccion": "reconstruir_word2vec_definitivo.py",
+  "ruta_fuente": "datos/GoogleNews-vectors-negative300.bin",
+  "ruta_mapeo": "seleccion_vocabulario.csv.gz",
+  "ruta_salida": "salida/w2v_google_news_top3000000_relaxed_lowercase_clean.pkl",
+  "sha256_mapeo_logico": "1f0672692faab63b3d9fc49431a3ced3369a6e4e3d606d9c91e068b9c22d06af",
+  "serializacion_mapeo": "Por fila, source_index TAB source_word TAB clean_word LF; UTF-8, orden del CSV.",
+  "sha256_indice": "28eaaf7828a2dac985708acc71417a41c3a00e83a3b645a4c986b4f3e8b20b19",
+  "serializacion_indice": "Palabras en orden, cada una seguida de LF; UTF-8.",
+  "sha256_vectores": "c03107624c7bdd21453b1dbf01f3cc74b9de5d3b125c56fd0b230dc464781ef1",
+  "serializacion_vectores": "Matriz completa float32 little-endian en orden de filas, sin cabeceras.",
+  "sha256_contenido_protocolo_experimental": "46ff0909ffbe358937f50225ce821b56140dd4b3c4a35638a83c9d919dbdfb39",
+  "serializacion_contenido_protocolo_experimental": "Etiquetas ordenadas de filas y columnas en UTF-8 seguidas de NUL, forma textual (653346, 300), valores por filas convertidos a float64 little-endian.",
+  "composicion_final": {
+    "originalmente_minusculas": 153070,
+    "convertidas_a_minusculas": 500276
+  },
+  "nota": "K no forma parte de la identidad del dataset base. Los bytes del PKL pueden depender de pandas, el contenido debe coincidir."
+}

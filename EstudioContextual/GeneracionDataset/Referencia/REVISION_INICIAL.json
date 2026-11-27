@@ -1,0 +1,58 @@
+{
+  "status": "REVIEWED_SOURCE_AND_SAVED_OUTPUTS_NOT_VERIFIED_DATA_BYTES",
+  "source_name": "contextual_def_generation(3).ipynb",
+  "source_sha256": "5728e94c1ebe664a177ca4ad746d28bb69faca8a5fb3695c8fa713d06b74f44f",
+  "n_cells": 36,
+  "expected": {
+    "master_words": 103029,
+    "occurrences_per_word": 100,
+    "master_rows": 10302900,
+    "embedding_dimension": 768,
+    "master_dtype": "float32",
+    "prototypes_words": 50455,
+    "prototype_dtype": "float64",
+    "prototype_arithmetic": "mean(float64(raw_float32_occurrences),axis=occurrences)",
+    "l2_normalization": false,
+    "selection_sha256": "e130061a093ff98c3265cda041a3a86e77c6204c3509e0aa0a56405af87af087",
+    "prototype_scientific_sha256": "0590ffe496e1c0da00b399e4773d715f835b17ce2c0b0004ff19fcd3c7269593",
+    "prototype_vocabulary_sha256": "95d87d7ce442dd36699ab0ff7bdd8bd12c10e5460f642f6ba4a514369e088edc"
+  },
+  "saved_evidence": {
+    "13": {
+      "cell_index_zero_based": 13,
+      "execution_count": 35,
+      "text": "\n==========================================================================================\nPARA COPIAR Y PEGAR — CORRECCIÓN POST-SELECCIÓN NAN\n==========================================================================================\n{\n  \"all_8_category_words_present\": true,\n  \"all_words_have_exactly_100_selected\": true,\n  \"excluded_word\": \"nan\",\n  \"expected_final_rows\": 10302900,\n  \"n_selected_contexts_final\": 10302900,\n  \"n_words_final\": 103029,\n  \"null_retained_as_valid_literal_word\": true,\n  \"occurrences_per_word\": 100,\n  \"removed_selected_contexts\": 100,\n  \"selection_sha256_final\": \"e130061a093ff98c3265cda041a3a86e77c6204c3509e0aa0a56405af87af087\"\n}\n==========================================================================================\nFIN — CORRECCIÓN POST-SELECCIÓN NAN\n==========================================================================================\n"
+    },
+    "18": {
+      "cell_index_zero_based": 18,
+      "execution_count": 43,
+      "text": "Auditando recorte WordPiece centrado:   0%|          | 0/10062 [00:00<?, ?it/s]\n\n==========================================================================================\nPARA COPIAR Y PEGAR — AUDITORÍA WORDPIECE CENTRADA PRE-BERT\n==========================================================================================\n{\n  \"all_rows_alignable\": true,\n  \"elapsed_seconds\": 1085.3627992999973,\n  \"examples\": [],\n  \"input_policy\": \"target_centered_wordpiece_crop\",\n  \"max_content_wordpieces\": 126,\n  \"max_raw_wordpieces\": 593,\n  \"max_seq_len\": 128,\n  \"max_target_wordpieces\": 10,\n  \"n_centered_crop_failures\": 0,\n  \"n_naive_target_fully_lost\": 7288,\n  \"n_naive_target_partially_truncated\": 1274,\n  \"n_rows_checked\": 10302900,\n  \"n_rows_requiring_wordpiece_crop\": 566399,\n  \"n_special_tokens\": 2,\n  \"n_target_missing_before_crop\": 0,\n  \"n_target_too_long\": 0\n}\n==========================================================================================\nFIN — AUDITORÍA WORDPIECE CENTRADA PRE-BERT\n==========================================================================================\n"
+    },
+    "21": {
+      "cell_index_zero_based": 21,
+      "execution_count": 1,
+      "text": "Parquet parcial encontrado: C:\\Users\\jisaa\\Workspace\\Tesis\\Exp2\\Results\\contextual_dataset\\_contextual_occurrences_definitive.partial.parquet\nTamaño [GiB]: 38.446\nFilas encontradas: 10,302,900\nRow groups: 10,303\nColumnas: ['occ_id', 'candidate_id', 'word', 'is_target', 'word_role', 'true_class', 'class_label', 'is_exp2_word', 'selection_stage', 'source_name', 'source_split', 'source_row_idx', 'source_doc_key', 'doc_split', 'word_pos_original', 'word_pos_window', 'wp_start', 'wp_end', 'n_tokens_window', 'context_window', 'left_context', 'right_context', 'text', 'embedding']\n\nOK — el Parquet parcial contiene exactamente 10,302,900 filas.\n\n================================================================================\nRESCATE COMPLETADO CORRECTAMENTE\n================================================================================\nArchivo definitivo: C:\\Users\\jisaa\\Workspace\\Tesis\\Exp2\\Results\\contextual_dataset\\contextual_occurrences_definitive.parquet\nFilas: 10,302,900\nRow groups: 10,303\nParquet parcial sigue existiendo: False\nParquet definitivo existe: True\n"
+    },
+    "23": {
+      "cell_index_zero_based": 23,
+      "execution_count": 4,
+      "text": "\n==========================================================================================\nPARA COPIAR Y PEGAR — ÍNDICE WORD ROW-GROUP\n==========================================================================================\n{\n  \"first_word\": \"aaa\",\n  \"index_valid\": true,\n  \"last_row_group_rows\": 900,\n  \"last_word\": \"zzap\",\n  \"n_row_groups\": 10303,\n  \"n_rows\": 10302900,\n  \"n_words\": 103029,\n  \"nan_absent\": true,\n  \"occurrences_per_word\": 100,\n  \"parquet_path\": \"C:\\\\Users\\\\jisaa\\\\Workspace\\\\Tesis\\\\Exp2\\\\Results\\\\contextual_dataset\\\\contextual_occurrences_definitive.parquet\",\n  \"row_group_index_path\": \"C:\\\\Users\\\\jisaa\\\\Workspace\\\\Tesis\\\\Exp2\\\\Results\\\\contextual_dataset\\\\word_row_group_index.csv\",\n  \"row_group_rows\": 1000\n}\n==========================================================================================\nFIN — ÍNDICE WORD ROW-GROUP\n==========================================================================================\n\n      word  word_index  n_occurrences  row_start  row_end_exclusive  \\\n0      aaa           0            100          0                100   \n1     aaaa           1            100        100                200   \n2    aaaaa           2            100        200                300   \n3     aaas           3            100        300                400   \n4      aab           4            100        400                500   \n5      aac           5            100        500                600   \n6   aachen           6            100        600                700   \n7     aacs           7            100        700                800   \n8    aacsb           8            100        800                900   \n9    aacta           9            100        900               1000   \n10     aad          10            100       1000               1100   \n11    aadi          11            100       1100               1200   \n12   aadmi          12            100       1200               1300   \n13    aadt          13            100       1300               1400   \n14     aaf          14            100       1400               1500   \n15    aafc          15            100       1500               1600   \n16     aag          16            100       1600               1700   \n17    aage          17            100       1700               1800   \n18     aah          18            100       1800               1900   \n19     aai          19            100       1900               2000   \n\n    row_group_id  \n0              0  \n1              0  \n2              0  \n3              0  \n4              0  \n5              0  \n6              0  \n7              0  \n8              0  \n9              0  \n10             1  \n11             1  \n12             1  \n13             1  \n14             1  \n15             1  \n16             1  \n17             1  \n18             1  \n19             1  "
+    },
+    "24": {
+      "cell_index_zero_based": 24,
+      "execution_count": 5,
+      "text": "\n==========================================================================================\nPARA COPIAR Y PEGAR — VALIDACIÓN FINAL DATASET CONTEXTUAL\n==========================================================================================\n{\n  \"all_8_category_words_exactly_100\": true,\n  \"all_words_exactly_100\": true,\n  \"category_words\": [\n    \"apple\",\n    \"bicycle\",\n    \"bread\",\n    \"canoe\",\n    \"chair\",\n    \"jellyfish\",\n    \"screwdriver\",\n    \"skunk\"\n  ],\n  \"embedding_dim\": 768,\n  \"embedding_dtype\": \"float32\",\n  \"embedding_norm_max\": 25.098310470581055,\n  \"embedding_norm_mean\": 16.451971886219336,\n  \"embedding_norm_min\": 7.250402450561523,\n  \"embedding_norm_std\": 1.4067481587434703,\n  \"embedding_scan_seconds\": 125.19874329998856,\n  \"l2_normalized\": false,\n  \"n_embedding_rows_checked\": 10302900,\n  \"n_non_finite_embeddings\": 0,\n  \"n_row_groups\": 10303,\n  \"n_rows\": 10302900,\n  \"n_unique_words\": 103029,\n  \"n_zero_embeddings\": 0,\n  \"nan_absent\": true,\n  \"occurrences_per_word\": 100,\n  \"parquet_path\": \"C:\\\\Users\\\\jisaa\\\\Workspace\\\\Tesis\\\\Exp2\\\\Results\\\\contextual_dataset\\\\contextual_occurrences_definitive.parquet\",\n  \"parquet_size_gib\": 38.44596943538636,\n  \"row_group_index_valid\": true,\n  \"row_group_rows_target\": 1000,\n  \"status\": \"VALID\",\n  \"word_order_violations\": 0,\n  \"word_scan_seconds\": 7.539661000017077\n}\n==========================================================================================\nFIN — VALIDACIÓN FINAL DATASET CONTEXTUAL\n==========================================================================================\n"
+    },
+    "25": {
+      "cell_index_zero_based": 25,
+      "execution_count": 8,
+      "text": "\n==========================================================================================\nPARA COPIAR Y PEGAR — METADATOS DEFINITIVOS DATASET CONTEXTUAL\n==========================================================================================\n{\n  \"dataset_meta_path\": \"C:\\\\Users\\\\jisaa\\\\Workspace\\\\Tesis\\\\Exp2\\\\Results\\\\contextual_dataset\\\\contextual_dataset_meta.json\",\n  \"dataset_status\": \"DEFINITIVE_VALIDATED\",\n  \"embedding_dim\": 768,\n  \"generation_config_path\": \"C:\\\\Users\\\\jisaa\\\\Workspace\\\\Tesis\\\\Exp2\\\\Results\\\\contextual_dataset\\\\generation_config.json\",\n  \"l2_normalized\": false,\n  \"max_content_wordpieces\": 126,\n  \"max_seq_len\": 128,\n  \"n_rows\": 10302900,\n  \"n_words\": 103029,\n  \"occurrences_per_word\": 100,\n  \"selection_sha256\": \"e130061a093ff98c3265cda041a3a86e77c6204c3509e0aa0a56405af87af087\",\n  \"status\": \"METADATA_FINALIZED\",\n  \"wordpiece_input_policy\": \"target_centered_wordpiece_crop\"\n}\n==========================================================================================\nFIN — METADATOS DEFINITIVOS DATASET CONTEXTUAL\n==========================================================================================\n"
+    }
+  },
+  "consumer_file": "Experimento_2_Hopfield_vs_HFY_UNIFICADO(1).ipynb",
+  "consumer_cell_index": 11,
+  "missing_artifacts_not_present_in_received_archives": true,
+  "full_dataset_included": false,
+  "stage_2_1_closed": false,
+  "consumer_saved_output": "Contextual prototypes shape: (50455, 768)\nContextual manifest: C:\\Users\\jisaa\\Workspace\\Tesis\\Exp2\\Results\\ResultsExp2_prototipos\\ctx_v3_equal100\\03_exp2_input\\contextual_exp2_input_manifest.json\nEmbedding SHA256: 0590ffe496e1c0da00b399e4773d715f835b17ce2c0b0004ff19fcd3c7269593\nVocabulary SHA256: 95d87d7ce442dd36699ab0ff7bdd8bd12c10e5460f642f6ba4a514369e088edc\n"
+}
